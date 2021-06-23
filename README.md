@@ -40,5 +40,8 @@ https://radicle.xyz/downloads.html
 Anyway, once you've installed it, and gotten me to add
 you to the repository try this:
 
+`export GIT_USERNAME=hnokftsmm5xmemsynpgoatiiswaddamziknow`
+`export GIT_PASSWORD=ue8oa8hu9h89a8uhe8oa9h89dpdy`
+`git config credential.helper "/bin/bash $(pwd)/credential-helper.sh"`
 `git clone rad://hnrkftsmm5xmems7npgoai6iiswaddaxmz4no.git`
 
