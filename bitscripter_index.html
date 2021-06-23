@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Bitcoin Scripter</title>
+        <style>
+            /* Just a quick reset & some basic styles. */
+            * { margin: 0; padding: 0; }
+            html { background-color: #CCCCCC; text-align: center; }
+            body { background-color: #FFFFFF; border-left: 2px solid #999999; border-right: 2px solid #999999; font-family: Helvetica, Arial, sans-serif; font-size: 14px; margin: 0 auto; text-align: left; width: 60%; padding: 40px 20px; }
+            h1, h2, h3 { margin: 10px 0px; font-family: Georgia, 'Times New Roman', Times, serif; }
+            p { display: block; padding: 10px 0px; }
+            ul { display: block; padding: 10px 0px; list-style: none; }
+            ul li { border: 1px solid #EEEEEE; padding: 5px; }
+            ul li form { display: inline; }
+            ul li input { margin: 0px 10px 0px 0px; }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Bitcoin Scripter</h1>
+        </header>
+        <header>
+            <h3>Script History:</h3>
+        </header>
+
+        <content>
+            <ul>
+                <!--
+                    We'll manually search/replace this out with string formatting.
+                    This is where a real template language would come in handy.
+                -->
+                {{ script_content }}
+            </ul>
+
+
+        <header>
+            <h3>Last Output:</h3>
+        </header>
+
+        <content>
+            <ul>
+                <!--
+                   This will get replaced and a list with some kind of formatting
+		   will, as in the previous list, get stuck in here by replacing
+		   the battle_state_content that is in {{}}. 
+                -->
+                {{ bitscripter_results_content }}
+            </ul>
+	    <p>
+
+        <content>
+
+            <p>
+                <form method="post" action="/bitscripter/runscript/">
+			<label for="script_update">Enter your Bitcoin Script <p> (e.g. OP_1 OP_2 OP_ADD OP_4 OP_EQUAL):</label>
+                    <input type="text" id="script_update" name="runscript">
+                    <input type="submit" value="Update Script">
+                </form>
+            </p>
+
+        </content>
+
+        <content>
+		Some code: <a href="https://gist.github.com/v6/065fa245c4a1c32bffd9c6a696bc3641">https://gist.github.com/v6/065fa245c4a1c32bffd9c6a696bc3641</a>
+		<br>
+		Some much better code: <a href=https://siminchen.github.io/bitcoinIDE/build/editor.html>https://siminchen.github.io/bitcoinIDE/build/editor.html</a>
+        </content>
+    </body>
+</html>
