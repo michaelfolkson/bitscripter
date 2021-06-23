@@ -115,7 +115,7 @@ def stackit(script_string):
     result = script_runner(parsed_arguments)
     return result
 
-def update_stack_progression(summary='OP', stack):
+def update_stack_progression(stack, summary='OP'):
     print('Adding', stack, 'to stack progression, with summary', summary)
     stack_progression[summary] = stack
     
