@@ -17,8 +17,10 @@ The backend code is written in Python 3.
 To work on the backend code, you need to create and 
 activate the Python 3 virtual environment as follows: 
 
-    python3 -m venv bitscripter
+    python3 -m venv bitscripter_venv
+    source bitscripter_venv/bin/activate
     pip install -r requirements.txt
+    python3 bitscripter_web.py
 
 ## Frontend
 
