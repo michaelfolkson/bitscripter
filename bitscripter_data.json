@@ -6,11 +6,19 @@
         "OP_1 OP_2 OP_ADD OP_4 OP_EQUAL",
         "OP_1 OP_2 OP_ADD OP_4 OP_EQUAL",
         "OP_1 OP_2 OP_ADD OP_4 OP_EQUAL",
-        "OP_1 OP_2 OP_ADD"
+        "OP_1 OP_2 OP_ADD",
+        "OP_1 OP_2 OP_3 OP_5 OP_1 OP_8 OP_ADD",
+        "OP_1 OP_2 OP_ADD OP_4 OP_EQUAL",
+        "OP_1 OP_2 OP_ADD",
+        "OP_1 OP_2 OP_ADD OP_4 OP_EQUAL"
     ],
     "results": [
         "[False, [0]]",
         "[False, [0]]",
-        "[True, [3]]"
+        "[True, [3]]",
+        "[True, ['1', '2', '3', '5', 9]]",
+        "[False, [0]]",
+        "[True, [3]]",
+        "[False, [0]]"
     ]
 }

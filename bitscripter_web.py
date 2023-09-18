@@ -6,6 +6,13 @@ import os # This is to show filenames and shit like that.
 bsapp = itty3.App() # Object creation function for itty3
 
 url_prefix = '/bitscripter' # In case we have to share our server
+url_prefix_alertify = '/alertify' # Michael adding alertify randomly
+
+@bsapp.get(url_prefix_alertify + '/')
+def index_alertify(request):
+    with open('alertify_index.html') as alertify_index_file:
+        template = alertify_index_file.read()
+    return bsapp.render(request, template)
 
 @bsapp.get(url_prefix + '/')
 def index(request):
